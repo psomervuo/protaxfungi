@@ -34,13 +34,13 @@ User should put sequence data and taxonomy tree in the directory 'model'. The ne
 3) Put USEARCH binary 'usearch10.0.240_i86linux32' to subdirectory 'thirdparty'. 
 4) Make reference sequences available to USEARCH by giving the following commands in directory 'model':
 
-$ cd model
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch its1.fa -output its1.udb
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch its2.fa -output its2.udb
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch itsfull.fa -output itsfull.udb
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits1train.fa -output sintaxits1.udb
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits2train.fa -output sintaxits2.udb
-$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxitsfulltrain.fa -output sintaxitsfull.udb
+$ cd model  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch its1.fa -output its1.udb  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch its2.fa -output its2.udb  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch itsfull.fa -output itsfull.udb  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits1train.fa -output sintaxits1.udb  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits2train.fa -output sintaxits2.udb  
+$ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxitsfulltrain.fa -output sintaxitsfull.udb  
 
 5) Download Krona from https://github.com/marbl/Krona/wiki 
 6) Put Krona tar package to directory 'thirdparty':
