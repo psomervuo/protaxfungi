@@ -25,9 +25,9 @@ User should put sequence data and taxonomy tree in the directory 'model'. The ne
 - taxonomy file contains taxonomy tree with all levels
 - tax[L=2..7] files contain taxonomy tree for each level separately
 - sintax predictor related files:
-  -- seqid2tax.ascii7: seqid2tax file where special characters have been replaced
-  -- taxonomy.ascii7: taxonomy file where special characters have been replaced
-  -- sintax[its1,its2,itsfull]train.fa: reference data suitably formatted for sintax
+  - seqid2tax.ascii7: seqid2tax file where special characters have been replaced
+  - taxonomy.ascii7: taxonomy file where special characters have been replaced
+  - sintax[its1,its2,itsfull]train.fa: reference data suitably formatted for sintax
 
 2) Sequence similarity related predictors are based on 'usearch_global' and 'sintax' from USEARCH package. Download USEARCH from https://www.drive5.com/usearch/download.html
 
