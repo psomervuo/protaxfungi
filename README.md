@@ -43,10 +43,10 @@ $ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxitsfulltrain.fa
 5) Download Krona from https://github.com/marbl/Krona/wiki 
 6) Put Krona tar package to directory 'thirdparty':
 
-$ cd thirdparty
-$ tar xvf KronaTools-2.6.1.tar
-$ cd KronaTools-2.6.1
-$ perl install.pl --prefix ../krona
+$ cd thirdparty  
+$ tar xvf KronaTools-2.6.1.tar  
+$ cd KronaTools-2.6.1  
+$ perl install.pl --prefix ../krona  
 
 and make Krona available in PATH (this is for Bash script 'runprotax'):
 
@@ -62,11 +62,11 @@ Two shell variables ITS and ODIR need to be set before running the script. Varia
 
 Sequences to be classified should be in FASTA format in a file named 'query.fa'. Before running PROTAX, user should set variable ODIR to be the parent directory of this file. PROTAX will write all its output in this directory. E.g. if the original FASTA file is in ~/allseqs/sample1.fa and the sequences represent ITS2 region, the following commands will create a new directory for this sample and run PROTAX for it:
 
-$ ODIR=~/myprotaxout/sample1
-$ ITS=its2
-$ mkdir $ODIR
-$ cp ~/allseqs/sample1.fa $ODIR/query.fa
-$ source runprotax
+$ ODIR=~/myprotaxout/sample1  
+$ ITS=its2  
+$ mkdir $ODIR  
+$ cp ~/allseqs/sample1.fa $ODIR/query.fa  
+$ source runprotax  
 
 After runprotax is finished, PROTAX classifications and Krona piechart are in $ODIR. Outputs from each taxonomy level are in separate files:
 
