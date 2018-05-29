@@ -11,7 +11,7 @@ Extract files from file 'protaxfungi.tgz' (tar xvfz protaxfungi.tgz). This will 
 
 Things to set before running PROTAX:
 
-## 1) Get sequence data files and taxonomy tree. 
+#### 1) Get sequence data files and taxonomy tree. 
 
 Directory 'model' contains files with the name 'paramsR.levelL', where R is 'its1', 'its2', or 'itsfull'. For each sequence region there are parameters for all taxonomy levels, i.e. L=2..7 (level 1 represents kingdom but it is excluded since the classification starts directly from Fungi node in kingdom level). Levels are 2:phylum, 3:class, 4:order, 5:family, 6:genus, and 7:species. Model parameters are trained for UNITE sequence data and taxonomy using USEARCH version usearch10.0.240_i86linux32.
 
@@ -27,10 +27,10 @@ Put sequence data and taxonomy tree in the directory 'model'. The needed files a
   - taxonomy.ascii7: taxonomy file where special characters have been replaced
   - sintax[its1,its2,itsfull]train.fa: reference data suitably formatted for sintax
 
-## 2) Sequence similarity related predictors are based on 'usearch_global' and 'sintax' from USEARCH package. Download USEARCH from https://www.drive5.com/usearch/download.html
+#### 2) Sequence similarity related predictors are based on 'usearch_global' and 'sintax' from USEARCH package. Download USEARCH from https://www.drive5.com/usearch/download.html
 
-## 3) Put USEARCH binary 'usearch10.0.240_i86linux32' to subdirectory 'thirdparty'. 
-## 4) Make reference sequences available to USEARCH by giving the following commands in directory 'model':
+#### 3) Put USEARCH binary 'usearch10.0.240_i86linux32' to subdirectory 'thirdparty'. 
+#### 4) Make reference sequences available to USEARCH by giving the following commands in directory 'model':
 
 $ cd model  
 $ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_usearch its1.fa -output its1.udb  
@@ -40,8 +40,8 @@ $ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits1train.fa -o
 $ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxits2train.fa -output sintaxits2.udb  
 $ ../thirdparty/usearch10.0.240_i86linux32 -makeudb_sintax sintaxitsfulltrain.fa -output sintaxitsfull.udb  
 
-## 5) Download Krona from https://github.com/marbl/Krona/wiki 
-## 6) Put Krona tar package to directory 'thirdparty':
+#### 5) Download Krona from https://github.com/marbl/Krona/wiki 
+#### 6) Put Krona tar package to directory 'thirdparty':
 
 $ cd thirdparty  
 $ tar xvf KronaTools-2.6.1.tar  
@@ -52,7 +52,7 @@ and make Krona available in PATH (this is for Bash script 'runprotax'):
 
 $ export PATH=$PATH:`pwd`/krona/bin
 
-## 7) Set variable PROTAXDIR correctly in Bash script 'runprotax'. It should be the path to the present directory where the subdirectories 'model', 'protaxscripts' and 'thirdparty' are.
+#### 7) Set variable PROTAXDIR correctly in Bash script 'runprotax'. It should be the path to the present directory where the subdirectories 'model', 'protaxscripts' and 'thirdparty' are.
 
 # How to use PROTAX 
 
