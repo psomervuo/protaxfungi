@@ -1,9 +1,7 @@
 # protaxfungi
 Probabilistic classification of fungi ITS
 
-#################
-# Preliminaries #
-#################
+# Preliminaries 
 
 Extract files from file 'protaxfungi.tgz' (tar xvfz protaxfungi.tgz). This will create directory 'protaxfungi' which contains PROTAX-Fungi version 1 (without sequence data and taxonomy files). Subdirectories under 'protaxfungi' are:
 
@@ -56,9 +54,7 @@ $ export PATH=$PATH:`pwd`/krona/bin
 
 7) Set variable PROTAXDIR correctly in Bash script 'runprotax'. It should be the path to the present directory where the subdirectories 'model', 'protaxscripts' and 'thirdparty' are.
 
-#####################
-# How to use PROTAX #
-#####################
+# How to use PROTAX 
 
 Bash script 'runprotax' is used for running PROTAX using either ITS1, ITS2, or ITSfull model. ITSfull includes the entire ITS1_5.8S_ITS2 region. 
 
