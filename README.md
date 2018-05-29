@@ -83,7 +83,7 @@ After runprotax is finished, PROTAX classifications and Krona piechart are in $O
 
 Note: when creating Krona piechart, if input FASTA file has ';' in ID lines, the 2nd column is interpreted as cluster size which sequence represents. Size information may also include prefix 'size='. Here are four examples of FASTA IDs:
 
-- "&gt" seqidA              =>   cluster size = 1  (since no other information given)
-- "&gt" seqidB;size=150     =>   cluster size = 150
-- "&gt" seqidC;40           =>   cluster size = 40
-- "&gt" seqidD;fungi        =>   cluster size = 1  (since 'fungi' is not a number)
+- &gt;seqidA              =>   cluster size = 1  (since no other information given)
+- &gt;seqidB;size=150     =>   cluster size = 150
+- &gt;seqidC;40           =>   cluster size = 40
+- &gt;seqidD;fungi        =>   cluster size = 1  (since 'fungi' is not a number)
