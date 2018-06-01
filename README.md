@@ -4,7 +4,7 @@ Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and 
 
 # Examples
 
-The results of PROTAX-fungi include interactive KRONA-charts showing the classifications and classification reliabilities of the environmental sequences. Here such charts are exemplified for case studies on root-associated fungi (greenland90.html) and for wood-associated fungi (sawdust90.html) considered by Abarenkov et al. (2018).
+The results of PROTAX-fungi include interactive KRONA-charts showing the classifications and classification reliabilities of the environmental sequences. Here such charts are exemplified for case studies on root-associated fungi (greenland90.html) and for wood-associated fungi (sawdust90.html) considered by Abarenkov et al. (2018). They can be obtained by downloading file protaxexamples.zip and unzipping it.
 
 # PROTAX software
 
