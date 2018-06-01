@@ -2,7 +2,11 @@
 
 Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and Ovaskainen, O. 2018. PROTAX-fungi: a web-based tool for probabilistic taxonomic placement of fungal ITS sequences. New Phytologist, in press.
 
-# Preliminaries 
+# Examples
+
+The results of PROTAX-fungi include interactive KRONA-charts showing the classifications and classification reliabilities of the environmental sequences. Here such charts are exemplified for case studies on root-associated fungi (greenland90.html) and for wood-associated fungi (sawdust90.html) considered by Abarenkov et al. (2018).
+
+# PROTAX software
 
 Extract files from file 'protaxfungi.tgz' (tar xvfz protaxfungi.tgz). This will create directory 'protaxfungi' which contains PROTAX-Fungi version 1 (without sequence data and taxonomy files). Subdirectories under 'protaxfungi' are:
 
