@@ -1,5 +1,6 @@
 # protaxfungi
-Probabilistic classification of fungi ITS
+
+Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and Ovaskainen, O. 2018. PROTAX-fungi: a web-based tool for probabilistic taxonomic placement of fungal ITS sequences. New Phytologist, in press.
 
 # Preliminaries 
 
