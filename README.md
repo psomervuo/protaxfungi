@@ -31,12 +31,12 @@ All taxa whose probabilities exceeds 0.01 are listed for each input sequence. Ta
 
 Krona HTML file 'krona.html' can be interactively visualized with web browser. Piechart shows all those taxonomic units for which there are classifications. Classification confidence is shown when user clicks the box "Color by Confidence". The six confidence categories for taxonomic unit with reference sequences (TunitA) and taxonomic unit for which there are no reference sequences (TunitB) are:
 
-1. TunitA   at least half of the input sequences classified to this taxon have classfication probability > th
-2. TunitA   less than half of the input sequences classified to this taxon have classfication probability > th
-3. TunitA   none of the input sequences classified to this taxon have classfication probability > th
-4. TunitB   at least half of the input sequences classified to this taxon have classfication probability > th
-5. TunitB   less than half of the input sequences classified to this taxon have classfication probability > th
-6. TunitB   none of the input sequences classified to this taxon have classfication probability > th
+1. TunitA   at least half of the input sequences classified to this taxon have classification probability > th
+2. TunitA   less than half of the input sequences classified to this taxon have classification probability > th
+3. TunitA   none of the input sequences classified to this taxon have classification probability > th
+4. TunitB   at least half of the input sequences classified to this taxon have classification probability > th
+5. TunitB   less than half of the input sequences classified to this taxon have classification probability > th
+6. TunitB   none of the input sequences classified to this taxon have classification probability > th
 
 where th is the threshold (e.g. 90%) for probability given by user. Note that this threshold is only used for coloring the pie chart, it does not affect how PROTAX reports the classification probabilities in the query.nameprob files. TunitB contains both the case where there are no reference sequences to known taxonomic unit and the case where the taxonomic unit is outside of the known taxonomy (unknown branch).
 
