@@ -6,6 +6,58 @@ Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and 
 
 The results of PROTAX-fungi include interactive KRONA-charts showing the classifications and classification reliabilities of the environmental sequences. Here such charts are exemplified for case studies on root-associated fungi (greenland90.html) and for wood-associated fungi (sawdust90.html) considered by Abarenkov et al. (2018). They can be accessed by downloading and unzipping protaxexamples.zip.
 
+# PROTAX output
+
+Classification results are available in text files. Output directory contains also an interactive HTML file where the classifications are shown in a taxonomy piechart (Krona).
+
+### The main output is the set of 6 text files which contain the taxonomic classifications for 6 levels from phylumn to species:
+
+| Filename | Description |
+| -------- | ----------- |
+| query2.nameprob |	 Taxonomic classifications in phylum level (seqID taxon probability) |
+| query3.nameprob | Taxonomic classifications in class level (seqID taxon probability) |
+| query4.nameprob |	 Taxonomic classifications in order level (seqID taxon probability) |
+| query5.nameprob |	 Taxonomic classifications in family level (seqID taxon probability) |
+| query6.nameprob |	 Taxonomic classifications in genus level (seqID taxon probability) |
+| query7.nameprob |	 Taxonomic classifications in species level (seqID taxon probability) |
+
+Each line of the file has the following format:
+
+seqID taxon1 probability1 taxon2 probability2 ... taxonN probabilityN
+
+All taxa whose probabilities exceeds 0.01 are listed for each input sequence. Taxon names include the path from kingdom level (Fungi) to the level (phylum, class, order, family, genus, species) of the file. The order of input sequences is the same in all 6 files.
+
+### Krona output
+
+Krona HTML file 'krona.html' can be interactively visualized with web browser. Piechart shows all those taxonomic units for which there are classifications. Classification confidence is shown when user clicks the box "Color by Confidence". The six confidence categories for taxonomic unit with reference sequences (TunitA) and taxonomic unit for which there are no reference sequences (TunitB) are:
+
+1. TunitA   at least half of the input sequences classified to this taxon have classfication probability > th
+2. TunitA   less than half of the input sequences classified to this taxon have classfication probability > th
+3. TunitA   none of the input sequences classified to this taxon have classfication probability > th
+4. TunitB   at least half of the input sequences classified to this taxon have classfication probability > th
+5. TunitB   less than half of the input sequences classified to this taxon have classfication probability > th
+6. TunitB   none of the input sequences classified to this taxon have classfication probability > th
+
+where th is the threshold (e.g. 90%) for probability given by user. Note that this threshold is only used for coloring the pie chart, it does not affect how PROTAX reports the classification probabilities in the query.nameprob files. TunitB contains both the case where there are no reference sequences to known taxonomic unit and the case where the taxonomic unit is outside of the known taxonomy (unknown branch).
+
+### Other files
+
+Filename | Description
+--- | ---
+krona.xml	| XML input file used to create Krona pie chart
+query1.logprob |	 Initial taxonomic placement of each sequence in kingdom level (fixed to be Fungi)
+query2.logprob |	 Taxonomic classifications with phylum node indices as output
+query3.logprob | Taxonomic classifications with class node indices as output
+query4.logprob |	 Taxonomic classifications with order node indices as output
+query5.logprob |	 Taxonomic classifications with family node indices as output
+query6.logprob |	 Taxonomic classifications with genus node indices as output
+query7.logprob |	 Taxonomic classifications with species node indices as output
+query.fa |	 FASTA input sequence file
+query.ids |	 Sequence identifiers of input sequences
+query.lensize |	 Cluster sizes and sequence lengths of input sequences
+query.m8 |	 usearch_global output (queryID referenceID sequenceSimilarity)
+query.sasintax |	 SINTAX output formatted to PROTAX
+query.sintax |	 original SINTAX output (queryID taxon,probability list)
 
 # PROTAX software
 
