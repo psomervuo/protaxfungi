@@ -61,7 +61,7 @@ query.sintax |	 original SINTAX output (queryID taxon,probability list)
 
 ---
 
-### Sections below contain information for administrator of PROTAX server and they are not relevant for user
+#### Sections below contain information for administrator of PROTAX server and they are not necessarily relevant for user
 
 ---
 
