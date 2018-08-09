@@ -1,6 +1,6 @@
 # protaxfungi
 
-Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and Ovaskainen, O. 2018. PROTAX-fungi: a web-based tool for probabilistic taxonomic placement of fungal ITS sequences. New Phytologist, in press.
+Abarenkov, K., Somervuo, P., Nilsson, H., Kirk, P., Huotari, T., Abrego, N. and Ovaskainen, O. 2018. PROTAX-fungi: a web-based tool for probabilistic taxonomic placement of fungal ITS sequences. New Phytologist, doi: 10.1111/nph.15301.
 
 # Examples
 
@@ -59,7 +59,13 @@ query.m8 |	 usearch_global output (queryID referenceID sequenceSimilarity)
 query.sasintax |	 SINTAX output formatted to PROTAX
 query.sintax |	 original SINTAX output (queryID taxon,probability list)
 
-# PROTAX software
+---
+
+### Sections below contain information for administrator of PROTAX server and they are not relevant for user
+
+---
+
+## PROTAX software
 
 Extract files from file 'protaxfungi.tgz' (tar xvfz protaxfungi.tgz). This will create directory 'protaxfungi' which contains PROTAX-Fungi version 1 (without sequence data and taxonomy files). Subdirectories under 'protaxfungi' are:
 
@@ -112,7 +118,7 @@ $ export PATH=$PATH:`pwd`/krona/bin
 
 #### 7) Set variable PROTAXDIR correctly in Bash script 'runprotax'. It should be the path to the present directory where the subdirectories 'model', 'protaxscripts' and 'thirdparty' are.
 
-# How to use PROTAX 
+## How to use PROTAX 
 
 Bash script 'runprotax' is used for running PROTAX using either ITS1, ITS2, or ITSfull model. ITSfull includes the entire ITS1_5.8S_ITS2 region. 
 
