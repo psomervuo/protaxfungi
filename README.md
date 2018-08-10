@@ -9,7 +9,7 @@ The results of PROTAX-fungi include interactive KRONA-charts showing the classif
 # PROTAX output
 
 After running PROTAX for the set of input sequences, all results are in a single output directory.
-Predicted class labels are in text files and output directory contains an interactive HTML file where the classifications are shown in a taxonomy piechart.
+Predicted class labels are in text files and output directory contains an interactive HTML file where the classifications are shown in a taxonomy pie chart.
 
 ### The main output is the set of 6 text files which contain the taxonomic classifications for 6 levels from phylumn to species:
 
@@ -41,7 +41,7 @@ Krona HTML file 'krona.html' can be interactively visualized with web browser. P
 
 where th is the threshold for probability given by user (e.g. 0.9). Note that this threshold is only used for coloring the pie chart, it does not affect how PROTAX reports the classification probabilities in the query.nameprob files. TunitB contains both the case where there are no reference sequences to known taxonomic unit and the case where the taxonomic unit is outside of the known taxonomy (unknown branch).
 
-Input sequences may represent clusters of sequences. By default, each input sequence represents only a single sequence but cluster size information can be included in the FASTA ID of the sequence. For details, see the end of this README file.
+By default, each input sequence represents a single sequence but it can also represent a cluster of sequences. Cluster size information can be included in the FASTA ID of the input sequence. This does not affect the classification of the sequence, but it affects the sizes of the taxa in the pie chart. For details, see the end of this README file.
 
 ### Other files
 
