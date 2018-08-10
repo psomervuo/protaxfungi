@@ -8,7 +8,8 @@ The results of PROTAX-fungi include interactive KRONA-charts showing the classif
 
 # PROTAX output
 
-Classification results are available in text files. Output directory contains also an interactive HTML file where the classifications are shown in a taxonomy piechart (Krona).
+After running PROTAX for the set of input sequences, all results are in a single output directory.
+Predicted class labels are in text files and output directory contains an interactive HTML file where the classifications are shown in a taxonomy piechart.
 
 ### The main output is the set of 6 text files which contain the taxonomic classifications for 6 levels from phylumn to species:
 
@@ -38,7 +39,9 @@ Krona HTML file 'krona.html' can be interactively visualized with web browser. P
 5. TunitB   less than half of the input sequences classified to this taxon have classification probability > th
 6. TunitB   none of the input sequences classified to this taxon have classification probability > th
 
-where th is the threshold (e.g. 90%) for probability given by user. Note that this threshold is only used for coloring the pie chart, it does not affect how PROTAX reports the classification probabilities in the query.nameprob files. TunitB contains both the case where there are no reference sequences to known taxonomic unit and the case where the taxonomic unit is outside of the known taxonomy (unknown branch).
+where th is the threshold for probability given by user (e.g. 0.9). Note that this threshold is only used for coloring the pie chart, it does not affect how PROTAX reports the classification probabilities in the query.nameprob files. TunitB contains both the case where there are no reference sequences to known taxonomic unit and the case where the taxonomic unit is outside of the known taxonomy (unknown branch).
+
+Input sequences may represent clusters of sequences. By default, each input sequence represents only a single sequence but cluster size information can be included in the FASTA ID of the sequence. For details, see the end of this README file.
 
 ### Other files
 
